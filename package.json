@@ -1,0 +1,29 @@
+{
+  "name": "shadowcat-harvester",
+  "version": "1.0.0",
+  "description": "Harvest from the Sierra APIs",
+  "main": "index.js",
+  "dependencies": {
+    "bson": "^0.5.7",
+    "highland": "^2.10.1",
+    "mkdirp": "^0.5.1",
+    "sierra-wrapper": "^0.1.0",
+    "snappyjs": "^0.5.0",
+    "sierra-wrapper": "github:nypl-registry/sierra-wrapper"
+
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYPL-discovery/sierra-harvester.git"
+  },
+  "author": "matt miller <thisismattmiller@gmail.com> (http://twitter.com/thisismmiller)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NYPL-discovery/sierra-harvester/issues"
+  },
+  "homepage": "https://github.com/NYPL-discovery/sierra-harvester"
+}
