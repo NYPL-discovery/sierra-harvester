@@ -30,13 +30,14 @@ var auth = (cb) => {
     if (cb) cb()
   })
 }
-var start = 700000
-var total = 200
-// var total = 100000
-// var total = 28500
 
-// var total = 50
+// where do we want to start, and how many do we want to do?
+var start = 100000
+var total = 100000
 var modifier = 10000000
+
+// this config will for example start at: 10100000 and go to 10200000
+
 var pageAry = []
 var dataDir = `./data/${start + modifier}-${start + total + modifier}`
 // make the directory
@@ -83,17 +84,6 @@ var downlaodFromSierra = (data, cb) => {
       }
 
       console.log(pageSize)
-      // var newPageSize = Math.ceil(pageSize / 2)
-
-      // var start1 = data[0]
-      // var end1 = data[0] + newPageSize
-      // var start2 = data[0] + newPageSize
-      // var end2 = data[0] + newPageSize + newPageSize
-
-      // if (newPageSize > 0) {
-      //   pageAry.push([start1, end1])
-      //   pageAry.push([start2, end2])
-      // }
       console.log('----')
       console.log(pageAry)
       cb(null, bibResults)
